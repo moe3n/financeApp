@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Puku editor state (project-local embeddings, configs)
+.puku/
+
+# Xcode — generated artifacts and user-specific state
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcuserdatad/
+*.xcuserstate.recover
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+
+# CocoaPods (not used by this project, but if added later)
+Pods/
+
+# Local environments / secrets
+.env
+.env.*
+*.local
