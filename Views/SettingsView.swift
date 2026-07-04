@@ -153,7 +153,11 @@ struct SettingsView: View {
                 ShareSheet(items: exportURLs)
             }
             .sheet(isPresented: $showingBackupShareSheet) {
-                if let url = backupURL { ShareSheet(items: [url]) }
+                // Always-present: pass an array so the share sheet is never
+                // asked to display an empty activity set. If `backupURL`
+                // is nil for any reason, we present an empty `ShareSheet`
+                // that dismisses itself rather than a blank screen.
+                ShareSheet(items: backupURL.map { [$0] } ?? [])
             }
             .fileImporter(
                 isPresented: $showingFileImporter,
