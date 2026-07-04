@@ -7,6 +7,9 @@ struct RootView: View {
             DashboardView()
                 .tabItem { Label("Dashboard", systemImage: "chart.pie.fill") }
 
+            InsightsView()
+                .tabItem { Label("Insights", systemImage: "chart.bar.doc.horizontal.fill") }
+
             EarningsListView()
                 .tabItem { Label("Earnings", systemImage: "arrow.down.circle.fill") }
 
