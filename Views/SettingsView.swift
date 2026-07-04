@@ -9,11 +9,21 @@ struct SettingsView: View {
     @Query(sort: \Spend.date, order: .reverse)   private var spends: [Spend]
     @Query(sort: \Installment.startDate, order: .reverse) private var installments: [Installment]
     @Query(sort: \SavingPlan.createdAt, order: .reverse)  private var savings: [SavingPlan]
+    @Query(sort: \Budget.createdAt, order: .reverse) private var budgets: [Budget]
+    @Query(sort: \NetWorthSnapshot.monthStart, order: .reverse) private var netWorthSnapshots: [NetWorthSnapshot]
 
+    @Environment(\.modelContext) private var modelContext
     @State private var exportURLs: [URL] = []
     @State private var showingShareSheet: Bool = false
     @State private var rescheduleTask: Task<Void, Never>? = nil
     @State private var forecastStrategyKind: ForecastStrategyKind = CashFlowForecast.activeStrategyKind
+    @State private var backupURL: URL? = nil
+    @State private var showingBackupShareSheet: Bool = false
+    @State private var showingFileImporter: Bool = false
+    @State private var pendingImportURL: URL? = nil
+    @State private var showingImportConfirmation: Bool = false
+    @State private var backupErrorMessage: String? = nil
+    @State private var showingBackupError: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -37,6 +47,19 @@ struct SettingsView: View {
                                 .foregroundStyle(.secondary)
                         }
                     }
+                }
+
+                Section("Backup & restore") {
+                    BackupRestoreSection(
+                        earnings: earnings,
+                        spends: spends,
+                        installments: installments,
+                        savings: savings,
+                        budgets: budgets,
+                        netWorthSnapshots: netWorthSnapshots,
+                        onExport: exportBackup,
+                        onImport: { showingFileImporter = true }
+                    )
                 }
 
                 Section {
@@ -129,6 +152,39 @@ struct SettingsView: View {
             .sheet(isPresented: $showingShareSheet) {
                 ShareSheet(items: exportURLs)
             }
+            .sheet(isPresented: $showingBackupShareSheet) {
+                if let url = backupURL { ShareSheet(items: [url]) }
+            }
+            .fileImporter(
+                isPresented: $showingFileImporter,
+                allowedContentTypes: [.json],
+                allowsMultipleSelection: false
+            ) { result in
+                switch result {
+                case .success(let urls):
+                    guard let url = urls.first else { return }
+                    pendingImportURL = url
+                    showingImportConfirmation = true
+                case .failure(let error):
+                    backupErrorMessage = error.localizedDescription
+                    showingBackupError = true
+                }
+            }
+            .alert("Replace all data?", isPresented: $showingImportConfirmation) {
+                Button("Cancel", role: .cancel) { pendingImportURL = nil }
+                Button("Replace", role: .destructive) {
+                    guard let url = pendingImportURL else { return }
+                    applyImportedBackup(from: url)
+                    pendingImportURL = nil
+                }
+            } message: {
+                Text("All earnings, spends, installments, savings plans, budgets and net-worth snapshots will be replaced with the contents of this backup.")
+            }
+            .alert("Backup error", isPresented: $showingBackupError) {
+                Button("OK", role: .cancel) { }
+            } message: {
+                Text(backupErrorMessage ?? "Unknown error.")
+            }
             .onAppear {
                 Task { await notifications.refreshAuthorizationStatus() }
             }
@@ -152,6 +208,97 @@ struct SettingsView: View {
                 savings: savings
             )
         }
+    }
+
+    /// Write a JSON backup of every model into the temp directory and present
+    /// a share sheet so the user can save it to Files / iCloud / etc.
+    private func exportBackup() {
+        do {
+            let url = try BackupCodec.writeBackup(
+                earnings: earnings,
+                spends: spends,
+                installments: installments,
+                savings: savings,
+                budgets: budgets,
+                netWorthSnapshots: netWorthSnapshots
+            )
+            backupURL = url
+            showingBackupShareSheet = true
+        } catch {
+            backupErrorMessage = error.localizedDescription
+            showingBackupError = true
+        }
+    }
+
+    /// Decode the user-selected JSON backup and replace the current store.
+    /// Surfaces an alert on failure; on success, schedules reschedule-all so
+    /// installment notifications match the freshly imported state.
+    private func applyImportedBackup(from url: URL) {
+        // Security-scoped resource dance for files delivered via `.fileImporter`:
+        // we must `startAccessing` before reading and `stopAccessing` after.
+        let needsAccess = url.startAccessingSecurityScopedResource()
+        defer { if needsAccess { url.stopAccessingSecurityScopedResource() } }
+
+        do {
+            let payload = try BackupCodec.readBackup(from: url)
+            try BackupStore.applyBackup(payload, to: modelContext)
+            scheduleReschedule()
+        } catch {
+            backupErrorMessage = (error as? LocalizedError)?.errorDescription
+                ?? error.localizedDescription
+            showingBackupError = true
+        }
+    }
+}
+
+/// Section content for `SettingsView`'s "Backup & restore" block. Extracted
+/// into its own struct so the Swift type-checker doesn't blow up on the
+/// parent view (which is generic over `ModelContext` for `.environment(...)`).
+struct BackupRestoreSection: View {
+
+    let earnings: [Earning]
+    let spends: [Spend]
+    let installments: [Installment]
+    let savings: [SavingPlan]
+    let budgets: [Budget]
+    let netWorthSnapshots: [NetWorthSnapshot]
+    let onExport: () -> Void
+    let onImport: () -> Void
+
+    private var itemCountLabel: String {
+        let total = earnings.count
+            + spends.count
+            + installments.count
+            + savings.count
+            + budgets.count
+            + netWorthSnapshots.count
+        return total == 1 ? "1 item" : "\(total) items"
+    }
+
+    var body: some View {
+        Button(action: onExport) {
+            HStack(spacing: 8) {
+                Image(systemName: "square.and.arrow.up.on.square")
+                Text("Export backup (JSON)")
+                Spacer(minLength: 8)
+                Text(itemCountLabel)
+                    .font(.caption.monospacedDigit())
+                    .foregroundStyle(.secondary)
+            }
+        }
+
+        Button(action: onImport) {
+            HStack(spacing: 8) {
+                Image(systemName: "square.and.arrow.down.on.square")
+                Text("Import backup…")
+                Spacer(minLength: 8)
+            }
+        }
+        .foregroundStyle(Color.accentColor)
+
+        Text("Importing will replace all current data with the backup. This cannot be undone — export first if you want to keep what's there.")
+            .font(.footnote)
+            .foregroundStyle(.secondary)
     }
 }
 
