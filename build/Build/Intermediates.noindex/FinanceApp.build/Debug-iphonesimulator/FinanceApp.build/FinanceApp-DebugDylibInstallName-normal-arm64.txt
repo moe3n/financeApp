@@ -1,0 +1,1 @@
+@rpath/FinanceApp.debug.dylib

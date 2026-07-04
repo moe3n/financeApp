@@ -1,0 +1,30 @@
+{
+  "/Users/mahmud/FinanceApp/Models/Spend.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Spend.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Spend.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Spend.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Spend.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Spend.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Models/SpendCategory.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategory.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategory.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategory.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategory.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategory.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Services/SpendCategoryStore.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategoryStore.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategoryStore.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategoryStore.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategoryStore.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendCategoryStore.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Views/SpendListView.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendListView.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendListView.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendListView.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendListView.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/SpendListView.swiftdeps"
+  }
+}

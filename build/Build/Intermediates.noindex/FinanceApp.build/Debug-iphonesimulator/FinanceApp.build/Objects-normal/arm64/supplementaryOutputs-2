@@ -1,0 +1,30 @@
+{
+  "/Users/mahmud/FinanceApp/Services/CSVExporter.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CSVExporter.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CSVExporter.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CSVExporter.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CSVExporter.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CSVExporter.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Views/CashFlowForecastCard.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CashFlowForecastCard.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CashFlowForecastCard.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CashFlowForecastCard.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CashFlowForecastCard.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CashFlowForecastCard.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Views/ChipPicker.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ChipPicker.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ChipPicker.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ChipPicker.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ChipPicker.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ChipPicker.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Views/CountdownCard.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CountdownCard.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CountdownCard.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CountdownCard.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CountdownCard.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/CountdownCard.swiftdeps"
+  }
+}

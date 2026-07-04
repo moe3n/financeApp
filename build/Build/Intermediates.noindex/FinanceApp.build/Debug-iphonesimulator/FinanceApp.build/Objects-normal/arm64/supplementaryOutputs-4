@@ -1,0 +1,30 @@
+{
+  "/Users/mahmud/FinanceApp/FinanceAppApp.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FinanceAppApp.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FinanceAppApp.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FinanceAppApp.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FinanceAppApp.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FinanceAppApp.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Services/FXRateStore.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FXRateStore.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FXRateStore.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FXRateStore.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FXRateStore.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/FXRateStore.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Services/ForecastStrategy.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ForecastStrategy.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ForecastStrategy.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ForecastStrategy.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ForecastStrategy.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/ForecastStrategy.swiftdeps"
+  },
+  "/Users/mahmud/FinanceApp/Services/Formatters.swift" : {
+    "const-values" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Formatters.swiftconstvalues",
+    "dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Formatters.d",
+    "diagnostics" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Formatters.dia",
+    "object" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Formatters.o",
+    "swift-dependencies" : "/Users/mahmud/FinanceApp/build/Build/Intermediates.noindex/FinanceApp.build/Debug-iphonesimulator/FinanceApp.build/Objects-normal/arm64/Formatters.swiftdeps"
+  }
+}

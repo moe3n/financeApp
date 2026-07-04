@@ -1,0 +1,64 @@
+{
+  "source": "/Users/mahmud/FinanceApp/Views/RootView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Dashboard",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 8
+        }
+      },
+      {
+        "comment": "",
+        "key": "Earnings",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 11
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spends",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Installments",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Savings",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Budgets",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 26
+        }
+      }
+    ]
+  },
+  "version": 1
+}

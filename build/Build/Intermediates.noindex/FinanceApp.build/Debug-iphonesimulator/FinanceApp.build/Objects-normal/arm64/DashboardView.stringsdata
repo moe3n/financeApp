@@ -1,0 +1,344 @@
+{
+  "source": "/Users/mahmud/FinanceApp/Views/DashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Dashboard",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 247
+        }
+      },
+      {
+        "comment": "",
+        "key": "Overview (%@)",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Trends (last 6 months)",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 150
+        }
+      },
+      {
+        "comment": "",
+        "key": "This month — by category",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "Active installments",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "Saving goals",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 187
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recent spends",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recent earnings",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 229
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total earnings",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spent this month",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total owed",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total saved",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "Net position",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "This week",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "Net worth",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Forecast",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Budgets",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "No installments yet",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 170
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%% paid",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "No saving plans yet",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 189
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 196
+        }
+      },
+      {
+        "comment": "",
+        "key": "No spends yet",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 210
+        }
+      },
+      {
+        "comment": "",
+        "key": "No earnings yet",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 231
+        }
+      },
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 289
+        }
+      },
+      {
+        "comment": "",
+        "key": "Earned",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 297
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spent",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 298
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 301
+        }
+      },
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 316
+        }
+      },
+      {
+        "comment": "",
+        "key": "Lent",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 317
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 320
+        }
+      },
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 325
+        }
+      },
+      {
+        "comment": "",
+        "key": "Owed",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 326
+        }
+      },
+      {
+        "comment": "",
+        "key": "Series",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 329
+        }
+      },
+      {
+        "comment": "",
+        "key": "Earn",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 347
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spent",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 353
+        }
+      },
+      {
+        "comment": "",
+        "key": "Owed",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 359
+        }
+      },
+      {
+        "comment": "",
+        "key": "Net",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 368
+        }
+      },
+      {
+        "comment": "",
+        "key": "Coming up",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 554
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next 7 days",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 556
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nothing scheduled in the next week.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 562
+        }
+      }
+    ]
+  },
+  "version": 1
+}

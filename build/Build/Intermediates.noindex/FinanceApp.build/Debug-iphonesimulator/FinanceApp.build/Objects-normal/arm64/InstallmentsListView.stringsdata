@@ -1,0 +1,312 @@
+{
+  "source": "/Users/mahmud/FinanceApp/Views/InstallmentsListView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Installments",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 44
+        }
+      },
+      {
+        "comment": "",
+        "key": "Paid off",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "No installments",
+        "location": {
+          "startingColumn": 73,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "New installment",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "Principal & interest",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 117
+        }
+      },
+      {
+        "comment": "",
+        "key": "Term & payment",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual interest",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 121
+        }
+      },
+      {
+        "comment": "",
+        "key": "Interest",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 127
+        }
+      },
+      {
+        "comment": "",
+        "key": "Term: %lld months",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "Calculate monthly payment",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "Start date",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next payment %@ — %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 181
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 183
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recurrence",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "Recurrence",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 276
+        }
+      },
+      {
+        "comment": "",
+        "key": "Day of month",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 290
+        }
+      },
+      {
+        "comment": "",
+        "key": "Due on day **%@** of every month (start date)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 298
+        }
+      },
+      {
+        "comment": "",
+        "key": "Next payment",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 379
+        }
+      },
+      {
+        "comment": "",
+        "key": "Payments",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 391
+        }
+      },
+      {
+        "comment": "",
+        "key": "Note",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 422
+        }
+      },
+      {
+        "comment": "",
+        "key": "Lender",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 368
+        }
+      },
+      {
+        "comment": "",
+        "key": "Principal",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 369
+        }
+      },
+      {
+        "comment": "",
+        "key": "Interest",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 370
+        }
+      },
+      {
+        "comment": "",
+        "key": "Term",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 371
+        }
+      },
+      {
+        "comment": "",
+        "key": "Monthly",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 372
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total payable",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "Paid",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 374
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remaining",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 375
+        }
+      },
+      {
+        "comment": "",
+        "key": "No payments yet",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 394
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record payment",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 417
+        }
+      },
+      {
+        "comment": "",
+        "key": "Record payment",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 459
+        }
+      },
+      {
+        "comment": "",
+        "key": "Monthly",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 434
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pay off",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 440
+        }
+      },
+      {
+        "comment": "",
+        "key": "+1 mo",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 447
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 455
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 74,
+          "startingLine": 461
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 463
+        }
+      }
+    ]
+  },
+  "version": 1
+}
